@@ -64,7 +64,6 @@ It is possible to set TimeZone (see `WiKi: List of tz database time zones
     {{ datetime|format_datetime(locale='en', pattern=pattern, timezone='Pacific/Chatham') }}
 
 
-
 .. note::
 
     The ``format_datetime`` filter is part of the ``IntlExtension`` which is not
