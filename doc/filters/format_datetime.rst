@@ -73,8 +73,13 @@ It is possible to set TimeZone (see `WiKi: List of tz database time zones
 
         $ composer require twig/intl-extra
 
-    Then, use the ``twig/extra-bundle`` on Symfony projects or add the extension
-    explicitly on the Twig environment::
+    Then, on Symfony projects, install the ``twig/extra-bundle``:
+
+    .. code-block:: bash
+
+        $ composer require twig/extra-bundle
+
+    Otherwise, add the extension explicitly on the Twig environment::
 
         use Twig\Extra\Intl\IntlExtension;
 
@@ -88,4 +93,5 @@ Arguments
 * ``dateFormat``: The date format
 * ``timeFormat``: The time format
 * ``pattern``: A date time pattern
-* ``timezone``: Timezone name
+* ``timezone``: The date timezone name
+* ``calendar``: The calendar (Gregorian by default)
